@@ -36,7 +36,7 @@ resource "google_compute_target_pool" "example_target_pool_us_east1" {
 # Create forwarding rules for each region to forward traffic to the target pools
 resource "google_compute_forwarding_rule" "example_forwarding_rule_us_central1" {
   name                  = "example-forwarding-rule-us-central1"
-  region                = "us_central11"
+  region                = "us_central1"
   target                = google_compute_target_pool.example_target_pool_us_central1.self_link
   port_range            = "80"
   load_balancing_scheme = "EXTERNAL"
