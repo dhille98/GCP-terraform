@@ -16,7 +16,7 @@ resource "google_compute_target_pool" "example_target_pool_us_central1" {
   health_checks = [google_compute_http_health_check.example_health_check.self_link]
 
   instances = [
-    "projects/acoustic-cargo-416714/zones/us-central1-c/instances/testing",
+    "us-central1-c/testing",
     //"projects/<your-project-id>/zones/us-central1-b/instances/<instance-name-2>",
   ]
 }
@@ -28,7 +28,7 @@ resource "google_compute_target_pool" "example_target_pool_us_east1" {
   health_checks = [google_compute_http_health_check.example_health_check.self_link]
 
   instances = [
-    "projects/acoustic-cargo-416714/zones/us-west4-b/instances/dhille-jenkins",
+   "us-west4-b/dhille-jenkins",
     //"projects/<your-project-id>/zones/us-east1-c/instances/<instance-name-4>",
   ]
 }
