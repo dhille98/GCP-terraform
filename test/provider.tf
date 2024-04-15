@@ -1,4 +1,6 @@
+
 provider "google" {
-  project = "acoustic-cargo-416714"
-  region  = "us-central1" # Choose a default region for resources that require it
+  credentials = file(home/dell/GCP-terraform/test/acoustic-cargo-416714-c04b9fca2f30.json)
+  project     = "acoustic-cargo-416714"
+  region      = "us-central1-a"
 }
